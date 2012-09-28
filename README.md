@@ -26,11 +26,11 @@ Screenshots
 -
 Pindown in browser (note that pins are of high resolution)
 
-![Pindown in browser](screenshot1.jpg)
+![Pindown in browser](https://raw.github.com/jglim/Pindown/master/screenshot1.png)
 
 Pin images in Windows Explorer
 
-![Pin images in Windows Explorer](screenshot2.jpg)
+![Pin images in Windows Explorer](https://raw.github.com/jglim/Pindown/master/screenshot2.png)
 
 License
 -
