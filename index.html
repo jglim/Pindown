@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Pindown : Pinterest board downloader" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Pindown</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jglim/Pindown">View on GitHub</a>
+
+          <h1 id="project_title">Pindown</h1>
+          <h2 id="project_tagline">Pinterest board downloader</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jglim/Pindown/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jglim/Pindown/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Pindown</h1>
+
+<p>Pindown is an unofficial Pinterest board downloader written in PHP. It fetches all pins from a target board (at the highest possible resolution) and displays it in a page, which can then be downloaded by a browser. </p>
+
+<p>Pin description are stored in the 'title' attribute in the image.</p>
+
+<h2>Usage</h2>
+
+<ol>
+<li>Open page with the fields (*board, token*) supplied. (e.g. <code>/pindown.php?board=yourBoardId&amp;token=yourAccessToken</code> )</li>
+<li>Save the page the way you like it (Usually with your browser's "Save as..")</li>
+</ol><h2>Obtaining Board ID</h2>
+
+<ol>
+<li>Open <code>http://pinterest.com/</code> (Ensure that you are already logged in)</li>
+<li>View source and search for <code>&lt;div class="BoardList"&gt;</code>
+</li>
+<li>You should see <code>&lt;li data="000000000000000000"&gt;</code> and your board name(s) below in a <code>&lt;span&gt;</code>
+</li>
+<li>The numbers in the <code>data="000000000000000000"</code> is the Board ID</li>
+</ol><h2>Obtaining Access Token</h2>
+
+<p>As Pinterest does not have a public API, there is no way <em>(yet?)</em> to generate an access token. To obtain my token, I set up a man-in-the-middle attack on the iOS Pinterest Client using <a href="http://www.fiddler2.com/fiddler2/">Fiddler2</a> and <a href="https://github.com/iSECPartners/ios-ssl-kill-switch">iOS-SSL-Killswitch</a>. When successful, you should be able to see the token <code>access_token</code> in the query string when the Pinterest Client makes a request.</p>
+
+<h2>Screenshots</h2>
+
+<p>Pindown in browser (note that pins are of high resolution)</p>
+
+<p><img src="https://raw.github.com/jglim/Pindown/master/screenshot1.png" alt="Pindown in browser"></p>
+
+<p>Pin images in Windows Explorer</p>
+
+<p><img src="https://raw.github.com/jglim/Pindown/master/screenshot2.png" alt="Pin images in Windows Explorer"></p>
+
+<h2>License</h2>
+
+<p>MIT</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pindown maintained by <a href="https://github.com/jglim">jglim</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
